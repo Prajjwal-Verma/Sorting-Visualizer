@@ -1,0 +1,27 @@
+.cors{
+    display: inline-block;
+    padding-top: 25px;
+    height: 700px;
+    width: 999px;
+    background-color: #333;
+}
+#anc{
+    font-size: large;
+    font-weight: bolder;
+}
+#anc:link {
+    color: red;
+    text-decoration: none;
+  }
+  
+  #anc:visited {
+    color: rgb(17, 230, 230);
+  }
+  
+  #anc:hover {
+    color: hotpink;
+  }
+  
+  #anc:active {
+    color: #333;
+  }
