@@ -13,17 +13,21 @@ function About() {
             />
           </a>
 
-          <h1>Veetrag Nahar</h1>
+          {/* <h1>Veetrag Nahar</h1>
           <h1>Vijay Yadav</h1>
-          <h1>Vinay Wakade</h1>
+          <h1>Vinay Wakade</h1> */}
           <h1>Prajjwal Verma</h1>
 
           <h2>Web Developers</h2>
+
+          <p className="profile-bio">
+            Sorting Algorithm Visualizer is an interactive tool designed to visually demonstrate how different sorting algorithms work. It provides step-by-step animations of popular algorithms like Bubble Sort, Merge Sort, Quick Sort, and more, helping users understand their logic, efficiency, and behavior through engaging visuals.
+          </p>
         </header>
 
-        <div class="profile-bio">
+        {/* <div class="profile-bio">
           <p>A react project</p>
-        </div>
+        </div> */}
       </aside>
     </div>
   );
