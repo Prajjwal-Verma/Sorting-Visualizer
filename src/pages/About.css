@@ -29,8 +29,8 @@
 .profile-card header {
   width: 179px;
   height: auto;
-  min-height: 280px;
-  padding: 40px 20px 30px 20px;
+  min-height: 300px;
+  padding: 40px 20px 40px 20px;
   display: inline-block;
   border-right: 2px dashed #eeeeee;
   background: #ffffff;
@@ -38,11 +38,17 @@
   margin-top: 50px;
   opacity: 0;
   text-align: center;
+  overflow: visible;
   -webkit-animation: moveIn 1s 3.1s ease forwards;
   animation: moveIn 1s 3.1s ease forwards;
 }
 .profile-card header h1 {
   color: #ff5722;
+  margin: 10px 0;
+}
+.profile-card header h2 {
+  margin: 10px 0 15px 0;
+  line-height: 1.4;
 }
 .profile-card header a {
   display: inline-block;
@@ -393,9 +399,11 @@
   }
   100% {
     width: 440px;
-    height: 280px;
+    height: auto;
+    min-height: 320px;
     background: #ffffff;
     -webkit-border-radius: 4px;
+    overflow: visible;
   }
 }
 @keyframes materia_landscape {
@@ -407,9 +415,11 @@
   }
   100% {
     width: 440px;
-    height: 280px;
+    height: auto;
+    min-height: 320px;
     background: #ffffff;
     border-radius: 4px;
+    overflow: visible;
   }
 }
 @-webkit-keyframes materia_portrait {
@@ -421,9 +431,11 @@
   }
   100% {
     width: 280px;
-    height: 440px;
+    height: auto;
+    min-height: 480px;
     background: #ffffff;
     -webkit-border-radius: 4px;
+    overflow: visible;
   }
 }
 @keyframes materia_portrait {
@@ -435,10 +447,12 @@
   }
   100% {
     width: 700px;
-    height: 550px;
+    height: auto;
+    min-height: 600px;
     background: #ffffff;
     border-radius: 4px;
     margin-top: 30px;
+    overflow: visible;
   }
 }
 @-webkit-keyframes moveIn {
