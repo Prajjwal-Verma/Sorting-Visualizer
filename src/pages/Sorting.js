@@ -38,8 +38,10 @@ class Sorting extends React.Component {
       },
       function () {
         if (e["sort"] === true) {
-          var element = document.getElementById("sortingVisualizer");
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
+          const element = document.getElementById("sortingVisualizer");
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
         }
       }
     );
@@ -65,7 +67,7 @@ class Sorting extends React.Component {
                 {this.state.sorted}
               </VisualizerController>
             </Col>
-            <Col id="sortingVisualizer">
+            <Col xl={8} lg={8} md={8}>
               <SortingVisualizer
                 visualizerDataHandler={this.visualizerDataHandler}
                 controllerData={this.state.default}

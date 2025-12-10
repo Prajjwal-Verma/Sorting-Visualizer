@@ -28,7 +28,8 @@
 }
 .profile-card header {
   width: 179px;
-  height: 280px;
+  height: auto;
+  min-height: 280px;
   padding: 40px 20px 30px 20px;
   display: inline-block;
   border-right: 2px dashed #eeeeee;
@@ -506,4 +507,94 @@
   line-height: 1.6;
   color: #333;
   margin-top: 1rem;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .profile-card {
+    width: 90% !important;
+    max-width: 320px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    animation: none !important;
+    -webkit-animation: none !important;
+    opacity: 1 !important;
+  }
+
+  .profile-card header {
+    width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+    padding: 30px 20px !important;
+    display: block !important;
+    border-right: none !important;
+    margin-top: 0 !important;
+    opacity: 1 !important;
+    animation: none !important;
+    -webkit-animation: none !important;
+  }
+
+  .profile-card header h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  .profile-card header h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  .profile-card header a {
+    margin: 10px 0;
+  }
+
+  .profile-card header a > img {
+    width: 100px;
+  }
+
+  .profile-card .profile-bio {
+    width: 100% !important;
+    height: auto !important;
+    padding: 20px !important;
+    display: block !important;
+    margin-top: 0 !important;
+    opacity: 1 !important;
+    animation: none !important;
+    -webkit-animation: none !important;
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .profile-card header a:after {
+    animation: none !important;
+    -webkit-animation: none !important;
+    transform: scale(1) !important;
+    -webkit-transform: scale(1) !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile-card {
+    max-width: 280px !important;
+  }
+
+  .profile-card header h1 {
+    font-size: 1.3rem;
+  }
+
+  .profile-card header h2 {
+    font-size: 1rem;
+  }
+
+  .profile-card .profile-bio {
+    font-size: 0.85rem !important;
+    padding: 15px !important;
+  }
 }

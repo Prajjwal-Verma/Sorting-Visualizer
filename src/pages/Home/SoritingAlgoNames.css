@@ -1,27 +1,101 @@
-.cors{
-    display: inline-block;
-    padding-top: 25px;
-    height: 700px;
-    width: 999px;
-    background-color: #333;
+.cors {
+    width: 100%;
+    padding: 20px;
+    background: transparent;
 }
-#anc{
-    font-size: large;
-    font-weight: bolder;
+
+.cors .container-fluid {
+    max-width: 100%;
+    padding: 0;
 }
-#anc:link {
-    color: red;
+
+.cors .row {
+    margin: 0;
+}
+
+.cors .col-12 {
+    padding: 0;
+}
+
+/* Carousel Styling */
+.cors .carousel {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.cors .carousel-inner {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.cors .carousel-item {
+    height: 80vh;
+    min-height: 500px;
+    text-align: center;
+    background: transparent;
+    position: relative;
+}
+
+.cors .carousel-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.cors .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/* Simple Carousel Controls */
+.cors .carousel-control-prev,
+.cors .carousel-control-next {
+    opacity: 0.8;
+}
+
+.cors .carousel-control-prev:hover,
+.cors .carousel-control-next:hover {
+    opacity: 1;
+}
+
+/* Simple Indicators */
+.cors .carousel-indicators {
+    margin-bottom: 1rem;
+}
+
+/* Simple Read More Button */
+#anc {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #e94560 0%, #533483 100%);
+    color: white !important;
     text-decoration: none;
-  }
-  
-  #anc:visited {
-    color: rgb(17, 230, 230);
-  }
-  
-  #anc:hover {
-    color: hotpink;
-  }
-  
-  #anc:active {
-    color: #333;
-  }
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+#anc:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(233, 69, 96, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cors .carousel-item {
+        height: 60vh;
+        min-height: 400px;
+    }
+}

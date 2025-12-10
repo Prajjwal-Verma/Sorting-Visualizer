@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: #333;
+  background: #333333 !important;
+  min-height: 100%;
 }
 
 .App-logo {
@@ -13,8 +14,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +27,75 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #e94560;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.App-link:hover {
+  color: #ff6b6b;
+  transform: translateY(-2px);
+}
+
+/* Modern Navbar Styles */
+.navbar {
+  background: rgba(26, 26, 46, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(233, 69, 96, 0.2);
+  padding: 0.75rem 0;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #e94560 0%, #533483 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #e94560 0%, #533483 100%);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+  background: rgba(233, 69, 96, 0.1);
+}
+
+.nav-link:hover::before {
+  width: 80%;
+}
+
+.nav-link.active {
+  color: #e94560 !important;
+  background: rgba(233, 69, 96, 0.15);
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +104,17 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    margin: 0.25rem 0;
+    padding: 0.5rem !important;
   }
 }

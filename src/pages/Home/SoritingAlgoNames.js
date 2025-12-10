@@ -10,10 +10,9 @@ class BootstrapCarouselComponent extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-12">
-              <Carousel>
+              <Carousel interval={3000} pause={false} fade>
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
                     src="page1.gif"
                     alt="First slide"
                   />
@@ -23,7 +22,7 @@ class BootstrapCarouselComponent extends React.Component {
                       className="btn1"
                       href="https://www.javatpoint.com/bubble-sort"
                       target="_blank"
-                      rel=""
+                      rel="noreferrer"
                     >
                       Read More...
                     </a>
@@ -32,7 +31,6 @@ class BootstrapCarouselComponent extends React.Component {
 
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
                     src="page2.gif "
                     alt="Second slide"
                   />
@@ -42,7 +40,7 @@ class BootstrapCarouselComponent extends React.Component {
                       id="anc"
                       href="https://www.javatpoint.com/cocktail-sort"
                       target="_blank"
-                      rel=""
+                      rel="noreferrer"
                     >
                       Read More...
                     </a>
@@ -51,7 +49,6 @@ class BootstrapCarouselComponent extends React.Component {
 
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
                     src="page3.gif"
                     alt="First slide"
                   />
@@ -60,7 +57,7 @@ class BootstrapCarouselComponent extends React.Component {
                       id="anc"
                       href="https://www.javatpoint.com/heap-sort"
                       target="_blank"
-                      rel=""
+                      rel="noreferrer"
                     >
                       Read More...
                     </a>
@@ -69,7 +66,6 @@ class BootstrapCarouselComponent extends React.Component {
 
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
                     src="page4.gif"
                     alt="First slide"
                   />
@@ -78,7 +74,7 @@ class BootstrapCarouselComponent extends React.Component {
                       id="anc"
                       href="https://www.javatpoint.com/insertion-sort"
                       target="_blank"
-                      rel=""
+                      rel="noreferrer"
                     >
                       Read More...
                     </a>
@@ -87,7 +83,6 @@ class BootstrapCarouselComponent extends React.Component {
 
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
                     src="page5.gif"
                     alt="First slide"
                   />
@@ -96,7 +91,7 @@ class BootstrapCarouselComponent extends React.Component {
                       id="anc"
                       href="https://www.javatpoint.com/daa-linear-time-sorting"
                       target="_blank"
-                      rel=""
+                      rel="noreferrer"
                     >
                       Read More...
                     </a>
@@ -105,7 +100,6 @@ class BootstrapCarouselComponent extends React.Component {
 
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
                     src="page6.gif"
                     alt="First slide"
                   />
@@ -114,7 +108,7 @@ class BootstrapCarouselComponent extends React.Component {
                       id="anc"
                       href="https://www.javatpoint.com/merge-sort"
                       target="_blank"
-                      rel=""
+                      rel="noreferrer"
                     >
                       Read More...
                     </a>
@@ -123,7 +117,6 @@ class BootstrapCarouselComponent extends React.Component {
 
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
                     src="page7.gif"
                     alt="First slide"
                   />
@@ -132,7 +125,7 @@ class BootstrapCarouselComponent extends React.Component {
                       id="anc"
                       href="https://www.javatpoint.com/quick-sort"
                       target="_blank"
-                      rel=""
+                      rel="noreferrer"
                     >
                       Read More...
                     </a>
@@ -141,7 +134,6 @@ class BootstrapCarouselComponent extends React.Component {
 
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
                     src="page8.gif"
                     alt="First slide"
                   />
@@ -150,7 +142,7 @@ class BootstrapCarouselComponent extends React.Component {
                       id="anc"
                       href="https://www.javatpoint.com/selection-sort"
                       target="_blank"
-                      rel=""
+                      rel="noreferrer"
                     >
                       Read More...
                     </a>
